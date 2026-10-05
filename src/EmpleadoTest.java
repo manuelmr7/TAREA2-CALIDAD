@@ -49,7 +49,6 @@ class EmpleadoTest {
     @Test
     @DisplayName("6. Ventas: >= 1500 euros (prima 200)")
     void test6_ventasMayorIgual1500() {
-        // Base 2000 + prima 200 = 2200
         assertEquals(2200.0f, Empleado.calcularNominaBruta(TipoEmpleado.VENDEDOR, 1500.0f, 0.0f), DELTA);
     }
 
